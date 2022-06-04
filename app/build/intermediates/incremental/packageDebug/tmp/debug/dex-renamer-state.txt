@@ -1,4 +1,4 @@
-#Sat Jun 04 16:07:30 MDT 2022
+#Sat Jun 04 17:04:22 MDT 2022
 base.2=D\:\\School\\MobileAppDev\\BNR_1_GeoQuiz\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
 path.2=10/classes.dex
 base.1=D\:\\School\\MobileAppDev\\BNR_1_GeoQuiz\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
