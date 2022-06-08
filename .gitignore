@@ -21,4 +21,10 @@ local.properties
 \.idea\navEditor.xml
 \.idea\assetWizardSettings.xml
 \build
-\captures
+
+*.idea\caches
+*.idea\libraries
+*.idea\modules.xml
+*.idea\workspace.xml
+*.idea\navEditor.xml
+*.idea\assetWizardSettings.xml
