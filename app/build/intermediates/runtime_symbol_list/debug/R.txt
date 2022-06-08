@@ -2013,6 +2013,7 @@ int id navigation_bar_item_large_label_view 0x7f08010b
 int id navigation_bar_item_small_label_view 0x7f08010c
 int id navigation_header_container 0x7f08010d
 int id never 0x7f08010e
+int id next_button 0x7f0801ad
 int id noScroll 0x7f08010f
 int id none 0x7f080110
 int id normal 0x7f080111
@@ -2039,6 +2040,7 @@ int id position 0x7f080125
 int id postLayout 0x7f080126
 int id progress_circular 0x7f080127
 int id progress_horizontal 0x7f080128
+int id question_text_view 0x7f0801ae
 int id radio 0x7f080129
 int id ratio 0x7f08012a
 int id rectangles 0x7f08012b
@@ -2429,12 +2431,18 @@ int string mtrl_picker_toggle_to_calendar_input_mode 0x7f0f0061
 int string mtrl_picker_toggle_to_day_selection 0x7f0f0062
 int string mtrl_picker_toggle_to_text_input_mode 0x7f0f0063
 int string mtrl_picker_toggle_to_year_selection 0x7f0f0064
+int string next_button 0x7f0f006e
 int string password_toggle_content_description 0x7f0f0065
 int string path_password_eye 0x7f0f0066
 int string path_password_eye_mask_strike_through 0x7f0f0067
 int string path_password_eye_mask_visible 0x7f0f0068
 int string path_password_strike_through 0x7f0f0069
-int string question_text 0x7f0f006a
+int string question_africa 0x7f0f006f
+int string question_americas 0x7f0f0070
+int string question_asia 0x7f0f0071
+int string question_australia 0x7f0f0072
+int string question_mideast 0x7f0f0073
+int string question_oceans 0x7f0f0074
 int string search_menu_title 0x7f0f006b
 int string status_bar_notification_info_overflow 0x7f0f006c
 int string true_button 0x7f0f006d

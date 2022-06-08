@@ -4,6 +4,7 @@ ADDED from D:\School\MobileAppDev\BNR_1_GeoQuiz\app\src\main\AndroidManifest.xml
 INJECTED from D:\School\MobileAppDev\BNR_1_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-27:12
 INJECTED from D:\School\MobileAppDev\BNR_1_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-27:12
 INJECTED from D:\School\MobileAppDev\BNR_1_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-27:12
+MERGED from [androidx.databinding:viewbinding:7.2.1] C:\Users\lones\.gradle\caches\transforms-3\beea12321c57ba204862a5a9833818f8\transformed\viewbinding-7.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\lones\.gradle\caches\transforms-3\97c4c647c3230353c4350c2d1c53aadd\transformed\core-ktx-1.7.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\lones\.gradle\caches\transforms-3\83015fc1ca113840f5c45013dc973c30\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\lones\.gradle\caches\transforms-3\811c5dc2c37875d6d709460c72152e12\transformed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
@@ -109,6 +110,8 @@ uses-sdk
 INJECTED from D:\School\MobileAppDev\BNR_1_GeoQuiz\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\School\MobileAppDev\BNR_1_GeoQuiz\app\src\main\AndroidManifest.xml
 INJECTED from D:\School\MobileAppDev\BNR_1_GeoQuiz\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:7.2.1] C:\Users\lones\.gradle\caches\transforms-3\beea12321c57ba204862a5a9833818f8\transformed\viewbinding-7.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.2.1] C:\Users\lones\.gradle\caches\transforms-3\beea12321c57ba204862a5a9833818f8\transformed\viewbinding-7.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\lones\.gradle\caches\transforms-3\97c4c647c3230353c4350c2d1c53aadd\transformed\core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\lones\.gradle\caches\transforms-3\97c4c647c3230353c4350c2d1c53aadd\transformed\core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\lones\.gradle\caches\transforms-3\83015fc1ca113840f5c45013dc973c30\transformed\material-1.4.0\AndroidManifest.xml:20:5-44

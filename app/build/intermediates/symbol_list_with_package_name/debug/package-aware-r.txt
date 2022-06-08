@@ -2014,6 +2014,7 @@ id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
 id never
+id next_button
 id noScroll
 id none
 id normal
@@ -2040,6 +2041,7 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id question_text_view
 id radio
 id ratio
 id rectangles
@@ -2430,12 +2432,18 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string next_button
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
-string question_text
+string question_africa
+string question_americas
+string question_asia
+string question_australia
+string question_mideast
+string question_oceans
 string search_menu_title
 string status_bar_notification_info_overflow
 string true_button
