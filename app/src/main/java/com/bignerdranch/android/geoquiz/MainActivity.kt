@@ -44,14 +44,16 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,R.string.correct_toast, Toast.LENGTH_SHORT).show()
         }*/
         binding.trueButton.setOnClickListener { view: View ->
-            Toast.makeText(this,R.string.correct_toast, Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this,R.string.correct_toast, Toast.LENGTH_SHORT).show()
+            checkAnswer(true)
         }
 
 /*        falseButton.setOnClickListener { view: View ->// we will leave this one as view:View instead of _: View.
             Toast.makeText(this,R.string.incorrect_toast, Toast.LENGTH_SHORT).show()
         }*/
         binding.falseButton.setOnClickListener { view: View ->
-            Toast.makeText(this,R.string.incorrect_toast, Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this,R.string.incorrect_toast, Toast.LENGTH_SHORT).show()
+            checkAnswer(false)
         }
 
         binding.nextButton.setOnClickListener {
@@ -69,5 +71,16 @@ class MainActivity : AppCompatActivity() {
     private fun updateQuestion(){
         val questionTextResId = questionBank[currentIndex].textResId
         binding.questionTextView.setText(questionTextResId)
+    }
+
+    private fun checkAnswer(userAnswer: Boolean) {
+        val correctAnswer = questionBank[currentIndex].answer
+
+        val messageResId = if(userAnswer == correctAnswer) {
+            R.string.correct_toast
+        } else {
+            R.string.incorrect_toast
+        }
+        Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show()
     }
 }
