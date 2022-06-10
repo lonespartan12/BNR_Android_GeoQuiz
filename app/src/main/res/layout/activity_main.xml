@@ -14,14 +14,31 @@
         android:padding="24dp"
         tools:text="@string/question_australia"
         />
-    <Button
-        android:id="@+id/next_button"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/next_button"
-        app:icon="@drawable/double_arrow_right"
-        app:iconGravity="end"
-        />
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_marginHorizontal="6dp"
+            android:id="@+id/prev_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prev_button"
+            app:icon="@drawable/double_arrow_left"
+            app:iconGravity="end"
+            />
+        <Button
+            android:layout_marginHorizontal="6dp"
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_button"
+            app:icon="@drawable/double_arrow_right"
+            app:iconGravity="end"
+            />
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

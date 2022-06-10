@@ -36,6 +36,10 @@
         "source": "C:\\Users\\lones\\.gradle\\daemon\\7.3.3\\com.bignerdranch.android.geoquiz.app-main-23:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "com.bignerdranch.android.geoquiz.app-merged_res-21:/drawable_double_arrow_left.xml.flat",
+        "source": "com.bignerdranch.android.geoquiz.app-main-23:/drawable/double_arrow_left.xml"
+    },
+    {
         "merged": "C:\\Users\\lones\\.gradle\\daemon\\7.3.3\\com.bignerdranch.android.geoquiz.app-merged_res-21:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\lones\\.gradle\\daemon\\7.3.3\\com.bignerdranch.android.geoquiz.app-main-23:\\layout\\activity_main.xml"
     },

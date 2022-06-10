@@ -1699,6 +1699,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable double_arrow_left
 drawable double_arrow_right
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
@@ -2040,6 +2041,7 @@ id percent
 id pin
 id position
 id postLayout
+id prev_button
 id progress_circular
 id progress_horizontal
 id question_text_view
@@ -2439,6 +2441,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string prev_button
 string question_africa
 string question_americas
 string question_asia

@@ -43,6 +43,8 @@ class MainActivity : AppCompatActivity() {
 /*        trueButton.setOnClickListener { _: View ->//we can use the underscore here since this is an anonymous function. we can do this because we are creating a new instance of View every time the button is clicked
             Toast.makeText(this,R.string.correct_toast, Toast.LENGTH_SHORT).show()
         }*/
+
+        // why is this not "binding.true_button."?
         binding.trueButton.setOnClickListener { view: View ->
             //Toast.makeText(this,R.string.correct_toast, Toast.LENGTH_SHORT).show()
             checkAnswer(true)
@@ -60,6 +62,19 @@ class MainActivity : AppCompatActivity() {
             currentIndex = (currentIndex+1) % questionBank.size
             /*val questionTextResId = questionBank[currentIndex].textResId
             binding.questionTextView.setText(questionTextResId)*/
+            updateQuestion()
+        }
+
+        binding.prevButton.setOnClickListener {
+            currentIndex = if(currentIndex == 0)
+                    questionBank.size-1
+                else
+                    (currentIndex-1) % questionBank.size
+            updateQuestion()
+        }
+
+        binding.questionTextView.setOnClickListener {
+            currentIndex = (currentIndex+1) % questionBank.size
             updateQuestion()
         }
 
