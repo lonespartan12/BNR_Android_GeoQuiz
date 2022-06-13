@@ -29,7 +29,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         /*
-        findViewById is a method that we will be using a lot. the R class that is created on compile, is a a file that adds all the xml tags as objects/methods/classes that we can refer to in the kotlin
+        findViewById is a method that we will be using a lot. the R class that is created on compile, is a a file that adds all the xml tags as objects/methods/classes that
+        we can refer to in the kotlin
          */
 /*        trueButton = findViewById(R.id.true_button)
         falseButton = findViewById(R.id.false_button)*/
