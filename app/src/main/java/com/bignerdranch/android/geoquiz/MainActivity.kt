@@ -6,6 +6,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import com.bignerdranch.android.geoquiz.databinding.ActivityMainBinding
+import android.util.Log
+
+private const val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,9 +25,12 @@ class MainActivity : AppCompatActivity() {
         Question(R.string.question_asia, true))
 
     private var currentIndex = 0
+    private var answered = mutableListOf<Int>()
+    var correctAnswerNumber: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "onCreate(Bundle?) called")
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -49,6 +55,7 @@ class MainActivity : AppCompatActivity() {
         binding.trueButton.setOnClickListener { view: View ->
             //Toast.makeText(this,R.string.correct_toast, Toast.LENGTH_SHORT).show()
             checkAnswer(true)
+            //isAnswerButtonEnable(false)
         }
 
 /*        falseButton.setOnClickListener { view: View ->// we will leave this one as view:View instead of _: View.
@@ -57,6 +64,7 @@ class MainActivity : AppCompatActivity() {
         binding.falseButton.setOnClickListener { view: View ->
             //Toast.makeText(this,R.string.incorrect_toast, Toast.LENGTH_SHORT).show()
             checkAnswer(false)
+            //isAnswerButtonEnable(false)
         }
 
         binding.nextButton.setOnClickListener {
@@ -84,9 +92,46 @@ class MainActivity : AppCompatActivity() {
         updateQuestion()
     }
 
+    override fun onStart() {
+        super.onStart()
+        Log.d(TAG, "OnStart() called")
+    }
+
+    override fun onResume(){
+        super.onResume()
+        Log.d(TAG, "On Resume() called")
+    }
+
+    override fun onPause(){
+        super.onPause()
+        Log.d(TAG, "onPause() called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "onStop() called")
+    }
+
+    override fun onDestroy(){
+        super.onDestroy()
+        Log.d(TAG, "onDestroy() called")
+    }
+
     private fun updateQuestion(){
         val questionTextResId = questionBank[currentIndex].textResId
         binding.questionTextView.setText(questionTextResId)
+        if(answered.contains(currentIndex)){
+            isAnswerButtonEnable(false)
+        }else isAnswerButtonEnable(true)
+
+        if (currentIndex == questionBank.size-1){
+            Toast.makeText(this,
+                "Percentage correct: "+(correctAnswerNumber.toFloat()/questionBank.size.toFloat())*100+'%',
+                Toast.LENGTH_LONG
+            ).show()
+            //correctAnswerNumber = 0;
+        }
+
     }
 
     private fun checkAnswer(userAnswer: Boolean) {
@@ -94,9 +139,24 @@ class MainActivity : AppCompatActivity() {
 
         val messageResId = if(userAnswer == correctAnswer) {
             R.string.correct_toast
+            correctAnswerNumber++
         } else {
             R.string.incorrect_toast
         }
         Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show()
+        isAnswerButtonEnable(false)
+        answered.add(currentIndex)
+/*        if (currentIndex == questionBank.size-1){
+            Toast.makeText(this,
+                "Percentage correct: "+(correctAnswerNumber.toFloat()/questionBank.size.toFloat())*100+'%',
+                Toast.LENGTH_LONG
+            ).show()
+            correctAnswerNumber = 0;
+        }*/
+    }
+
+    private fun isAnswerButtonEnable(value: Boolean){
+        binding.trueButton.isEnabled = value
+        binding.falseButton.isEnabled = value
     }
 }
